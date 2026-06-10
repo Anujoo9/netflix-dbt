@@ -1,15 +1,32 @@
-Welcome to your new dbt project!
+# My First dbt Project
 
-### Using the starter project
+This repository contains my first dbt project, where I worked on building a simple data pipeline using AWS, Snowflake, and dbt.
 
-Try running the following commands:
-- dbt run
-- dbt test
+## Data Flow
 
+text CSV Files     -> AWS    ->  Snowflake Stage     -> Snowflake Raw Tables   ->  dbt Transformations    -> Snowflake Tables / Views 
 
-### Resources:
-- Learn more about dbt [in the docs](https://docs.getdbt.com/docs/introduction)
-- Check out [Discourse](https://discourse.getdbt.com/) for commonly asked questions and answers
-- Join the [chat](https://community.getdbt.com/) on Slack for live discussions and support
-- Find [dbt events](https://events.getdbt.com) near you
-- Check out [the blog](https://blog.getdbt.com/) for the latest news on dbt's development and best practices
+## Getting Started
+
+Run the following commands to build and test the project:
+
+bash # Run all models dbt run  # Execute tests dbt test  # Run a specific model dbt run --select <model_name> 
+
+## Project Goal
+
+The purpose of this project is to:
+
+- Load source data from CSV files
+- Store files in AWS
+- Ingest data into Snowflake using stages
+- Transform and model data using dbt
+- Create analytics-ready tables and views in Snowflake
+
+## Resources
+
+- https://docs.getdbt.com/docs/introduction
+- https://discourse.getdbt.com/
+- https://community.getdbt.com/
+- https://events.getdbt.com
+- https://blog.getdbt.com/
+
