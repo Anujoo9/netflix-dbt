@@ -4,7 +4,7 @@ This repository contains my first dbt project, where I worked on building a simp
 
 ## Data Flow
 
-text CSV Files     -> AWS    ->  Snowflake Stage     -> Snowflake Raw Tables   ->  dbt Transformations    -> Snowflake Tables / Views 
+CSV Files     -> AWS    ->  Snowflake Stage     -> Snowflake Raw Tables   ->  dbt Transformations    -> Snowflake Tables / Views 
 
 ## Getting Started
 
