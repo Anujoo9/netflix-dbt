@@ -18,7 +18,7 @@ FROM src_ratings
 WHERE rating IS NOT NULL
 
 {% if is_incremental() %}
-    AND rating_timestamp > (SELECT MAX(rating_timestamp)) from {{ this}}
+    AND rating_timestamp > (SELECT MAX(rating_timestamp) from {{ this}})
 {% endif %}
 
  
